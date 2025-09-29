@@ -617,18 +617,23 @@ body {
 .card1 {
     background-image: url(./assets/images/case_study1.jpeg);
 }
+
 .card2 {
     background-image: url(./assets/images/case_study2.jpeg);
 }
+
 .card3 {
     background-image: url(./assets/images/case_study3.jpeg);
 }
+
 .card4 {
     background-image: url(./assets/images/case_study4.jpeg);
 }
+
 .card5 {
     background-image: url(./assets/images/case_study5.jpeg);
 }
+
 .card6 {
     background-image: url(./assets/images/case_study3.jpeg);
 }
@@ -699,8 +704,253 @@ h4 a {
         transform: translateY(50px);
         opacity: 0;
     }
+
     to {
         transform: translateY(0);
         opacity: 1;
     }
+}
+
+
+
+/**************** Achievement**************************/
+
+.achievement {
+    width: 100%;
+    height: 70rem;
+    background-color: #EFF1F5;
+    padding: 116px 0 120px 0;
+}
+
+.achievement-title {
+    text-align: center;
+}
+
+.achievement-title h5 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.6px;
+    color: rgb(248, 78, 119);
+}
+
+.achievement-title h2 {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 50px;
+    color: rgb(13, 30, 80);
+}
+
+.achievement-ul-btn li,
+a {
+    list-style: none;
+    text-decoration: none;
+    border-radius: 0 !important;
+}
+
+.achievement-ul-btn a {
+    background-color: white !important;
+    border: none;
+    color: #040D2A !important;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 18px;
+    padding: 0.8rem 1.5rem 0.8rem 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.achievement-ul-btn a:hover {
+    background-color: #F84E77 !important;
+    border: none;
+    color: white !important;
+}
+
+.achievement-ul-btn .active {
+    background-color: #F84E77 !important;
+    color: white !important;
+}
+
+.achievement-ul-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 3rem 0 2rem 0;
+    gap: 0.5rem;
+}
+
+.tab-content {
+    margin: 0 6.25rem 0 6.25rem;
+    background-color: white;
+}
+
+.tab-img img {
+    max-width: 100%;
+    width: 30.3rem;
+    height: auto;
+}
+
+.tab-text {
+    max-width: 30rem;
+    padding: 0 3.75rem 0 3.75rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tab-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    color: rgb(13, 30, 80);
+}
+
+.tab-text p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27.2px;
+    color: rgb(84, 86, 92);
+}
+
+.list-arrow {
+    padding: 1rem 1rem 1rem 0;
+    line-height: 2.5rem;
+    list-style: none;
+}
+
+.list-arrow>li img {
+    width: 1.5rem;
+    height: auto;
+    margin: 0 1rem 0 0;
+}
+
+
+/************  Client Testimonials**********************/
+
+.testimonials {
+    width: 100%;
+    height: 70rem;
+    padding: 6rem 0 6rem 0;
+}
+
+.testimonial-title {
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.testimonial-title h5 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.6px;
+    color: rgb(248, 78, 119);
+}
+
+.testimonial-title h2 {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 50px;
+    color: rgb(13, 30, 80);
+}
+
+/* cards */
+
+.testimonial-content {
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.card {
+    background-color: rgba(243, 244, 246, 1);
+    padding: 2rem;
+    max-width: 25rem;
+    border-radius: 10px;
+    border: 1px solid rgba(61, 61, 61, 0.123) !important;
+    transition: all 0.3s ease;
+    position: relative;
+    
+}
+
+.card:hover {
+    border: none !important;
+    box-shadow: 0 20px 30px -5px rgba(43, 43, 43, 0.24);
+    border: 1px solid white !important;
+}
+
+
+.test-quote {
+  position: absolute;
+  top: 1.6rem;
+  right: 4rem;
+}
+
+.test-quote img {
+  width: 3rem; 
+  height: auto;
+  opacity: 0.3; 
+  animation: none !important;
+  transition: all 0.3s ease;
+}
+
+.test-quote img:hover {
+  opacity: 1; 
+  animation: none !important;
+}
+
+.middle-test {
+    opacity: 1 !important;
+}
+
+
+
+.header {
+    display: flex;
+    align-items: center;
+    grid-gap: 1rem;
+    gap: 1rem;
+}
+
+.header .image {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    object-fit: cover;
+    background-image: url(./assets/images/testemonial1.png);
+    background-size: cover;
+}
+
+
+.name {
+    margin: 0.25rem 0 0 0;
+    font-family: Hind, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    color: rgb(13, 30, 80);
+}
+
+.message {
+    /* overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    margin-top: 1rem; */
+    font-family: Hind, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    color: rgb(84, 86, 92);
+}
+
+.header span {
+    font-family: Hind, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    color: rgb(124, 126, 132);
+}
+
+.client-title {
+    font-family: Hind, sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 37.4px;
+    color: rgb(13, 30, 80);
 }
