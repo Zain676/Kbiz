@@ -364,7 +364,7 @@ body {
 .service-arrow-icon {
     border: 1px solid rgba(197, 197, 197, 0.747);
     padding: 0.6rem 0.8rem 0.9rem 0.8rem;
-    border-radius: 50%;
+    border-radius: 50% !important;
     transition: all 0.4s ease;
 }
 
@@ -882,7 +882,7 @@ a {
   right: 4rem;
 }
 
-.test-quote img {
+.test-quote .quote-img {
   width: 3rem; 
   height: auto;
   opacity: 0.3; 
@@ -890,7 +890,7 @@ a {
   transition: all 0.3s ease;
 }
 
-.test-quote img:hover {
+.test-quote .quote-img:hover {
   opacity: 1; 
   animation: none !important;
 }
@@ -913,8 +913,17 @@ a {
     width: 4rem;
     border-radius: 50%;
     object-fit: cover;
-    background-image: url(./assets/images/testemonial1.png);
     background-size: cover;
+}
+
+.header .img1 {
+    background-image: url(./assets/images/testemonial1.png);
+}
+.header .img2 {
+    background-image: url(./assets/images/testemonial2.png);
+}
+.header .img3 {
+    background-image: url(./assets/images/testemonial3.png);
 }
 
 
@@ -928,10 +937,6 @@ a {
 }
 
 .message {
-    /* overflow: hidden;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    margin-top: 1rem; */
     font-family: Hind, sans-serif;
     font-size: 16px;
     font-weight: 400;
