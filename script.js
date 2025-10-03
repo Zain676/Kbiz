@@ -1,3 +1,57 @@
+let register_btn = document.getElementById("register")
+
+register_btn.addEventListener("click", ()=> {
+    window.location.href = "http://127.0.0.1:5500/register/signup.html"
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const wrapper = document.querySelector(".wrapper");
 const carousel = document.querySelector(".carousel");
 const firstCardWidth = carousel.querySelector(".card").offsetWidth;

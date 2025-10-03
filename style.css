@@ -1271,3 +1271,166 @@ footer {
 .copyright>p a:hover {
     color: white;
 }
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1200px) {
+  /* Custom: reduce the huge left/right margins that break the grid */
+  .container1,
+  .container-fluid {
+    margin: 0 30px !important; /* Custom: lower margin for mid screens */
+    padding: 0 15px !important;
+  }
+
+  /* Custom: make major sections use auto height instead of fixed */
+  .hero-section,
+  .services,
+  .about-us,
+  .case-study,
+  .achievement,
+  .testimonials,
+  .agent,
+  .cta {
+    min-height: auto !important; /* Custom: allow content to flow */
+    height: auto !important;
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+}
+
+/* Custom: responsive behavior for tablets (<= 992px) */
+@media (max-width: 992px) {
+  /* Custom: reset .row so other rows don't become full-screen */
+  .row {
+    height: auto !important;         /* Custom: undo 90vh */
+    flex-wrap: wrap !important;      /* Custom: allow columns to wrap */
+    align-items: flex-start !important;
+  }
+
+  /* Custom: toolbar must stop using huge gap */
+  .toolbar {
+    justify-content: space-between !important; /* Custom: normal spacing */
+    gap: 0.6rem !important;                     /* Custom: small gap */
+    padding: 0 .75rem !important;               /* Custom: inner padding */
+  }
+
+  .toolbar-left, .toolbar-right {
+    gap: 0.4rem !important;
+  }
+
+  /* Custom: hero becomes flow content on tablets */
+  .hero-section {
+    height: auto !important;                    /* Custom: no fixed viewport height */
+    padding: 4rem 0 !important;
+    background-position: top center !important;
+  }
+  .hero-left h2 {
+    font-size: 48px !important;                 /* Custom: scale headline */
+    line-height: 1.05 !important;
+  }
+  .hero-left p { font-size: 18px !important; }
+
+  /* Custom: video icon must not overflow column */
+  .video-icon {
+    position: static !important;                /* Custom: place it in flow */
+    width: auto !important;
+    height: auto !important;
+    margin: 0.6rem auto 0 auto !important;
+    transform: none !important;
+  }
+
+  /* Custom: services - stack into 2 columns then single column on smaller widths */
+  .service-items {
+    display: flex !important;
+    flex-wrap: wrap !important;                 /* Custom: wrap services */
+    gap: 1rem !important;
+  }
+  .single-service {
+    flex: 1 1 calc(50% - 1rem) !important;      /* Custom: 2-up on tablets */
+    padding: 1.2rem !important;                 /* Custom: smaller paddings */
+    line-height: normal !important;             /* Custom: undo huge line-height */
+    border-right: 1px solid rgba(197,197,197,0.7) !important;
+  }
+  .service1 { padding-left: 1rem !important; }
+  .service4 { padding-right: 1rem !important; border-right: none !important; }
+
+  /* Custom: about - column stack */
+  .about-content {
+    flex-direction: column !important;
+    gap: 1.25rem !important;
+    align-items: stretch !important;
+  }
+  .about-left img { width: 100% !important; height: auto !important; }
+  .about-left-text {
+    position: static !important;               /* Custom: make badge flow below image */
+    left: auto !important;
+    bottom: auto !important;
+    transform: none !important;
+    margin-top: -2rem !important;              /* Custom: slight overlap preserved */
+    display: inline-block !important;
+  }
+
+  /* Custom: case-study / carousel - remove full-screen min height */
+  .wrapper { min-height: auto !important; padding-bottom: 1.25rem !important; }
+  .wrapper .carousel { grid-auto-columns: calc((100% / 2) - 9px) !important; } /* 2-up */
+  .carousel .card { height: auto !important; min-height: 240px !important; padding-bottom: 1rem !important; }
+
+  /* Custom: tab content margins */
+  .tab-content { margin: 0 2rem !important; padding: 1rem !important; }
+
+  /* Custom: testimonials stack */
+  .testimonial-content { flex-direction: column !important; align-items: center !important; gap: 1rem !important; }
+
+  /* Custom: footer columns stack */
+  .columns { flex-direction: column !important; align-items: flex-start !important; gap: 1.25rem !important; padding: 0 1rem !important; }
+}
+
+/* Custom: responsive behavior for phones (<= 600px) */
+@media (max-width: 600px) {
+  /* Custom: tighten margins */
+  .container1, .container-fluid { margin: 0 12px !important; padding: 0 12px !important; }
+
+  /* Custom: nav extras hidden on mobile, rely on bootstrap collapse */
+  .nav-right { display: none !important; } /* Custom: hides the extra search/get-started area on tiny screens. Bootstrap collapse will show burger menu. */
+
+  /* Custom: hero scale */
+  .hero-left h2 { font-size: 34px !important; line-height: 1.03 !important; }
+  .hero-left p { font-size: 16px !important; }
+
+  /* Custom: services -> single column */
+  .single-service { flex: 1 1 100% !important; padding: 1rem !important; border-right: none !important; border-top: 1px solid rgba(197,197,197,0.7) !important; }
+
+  .service-icon img { width: 2.8rem !important; }
+
+  /* Custom: carousel single card across */
+  .wrapper .carousel { grid-auto-columns: 100% !important; gap: 12px !important; }
+  .card { min-height: 220px !important; height: auto !important; }
+
+  /* Custom: agent logos shrink */
+  .logos img { height: 1.6rem !important; width: auto !important; margin-bottom: 1rem !important; }
+
+  /* Custom: CTA and text scale */
+  .cta-content h2 { font-size: 28px !important; }
+
+  /* Custom: footer stacks menu and form */
+  .footer-menu { flex-direction: column !important; gap: .5rem !important; }
+  .footer-menu-ul { display: block !important; }
+  .footer-form { width: 100% !important; }
+  .form-button { max-width: 100% !important; }
+
+  /* Custom: final safety - remove remaining enforced viewport heights */
+  .services, .about-us, .case-study, .achievement, .testimonials, .agent, .cta {
+    min-height: auto !important;
+    height: auto !important;
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+}
